@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Acceso al Servidor</title>
+</head>
+<body>
+
+    <h1>TERMINAL DE ACCESO</h1>
+    <p>Introduce tus credenciales para la misión:</p>
+
+    <form id="accessForm">
+        <div>
+            <label>PLAYER_ID (Nombre):</label><br>
+            <input id="playerName" type="text" placeholder="ID del jugador...">
+            <p id="nameAlert"></p>
+        </div>
+
+        <div>
+            <label>COMMS_LINK (Email):</label><br>
+            <input id="playerEmail" type="text" placeholder="tu@rango.com">
+            <p id="emailAlert"></p>
+        </div>
+
+        <div>
+            <label>ENCRYPTION_KEY (Clave):</label><br>
+            <input id="pass1" type="password" placeholder="Mínimo 8 dígitos">
+            <p id="passAlert"></p>
+        </div>
+
+        <div>
+            <label>RE-ENCRYPT (Confirmar):</label><br>
+            <input id="pass2" type="password" placeholder="Repite la clave">
+            <p id="confirmAlert"></p>
+        </div>
+
+        <button type="submit">INICIAR SECUENCIA</button>
+    </form>
+
+    <h2 id="terminalOutput"></h2>
+
+    <script src="juegos5.js"></script>
+
+</body>
+</html>
